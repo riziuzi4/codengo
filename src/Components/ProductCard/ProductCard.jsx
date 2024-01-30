@@ -23,7 +23,7 @@ export default function ProductCard({ data }) {
 
             <div className="Product flex my-3  rounded-full">
                 <img src="./img/product.png" alt="img" className=" w-3/5 object-cover rounded-l-3xl -mr-5 shadow-lg shadow-green-700"  />
-                <div className="discription flex flex-col bg-skin-bg300 w-2/5 shadow-md  px-5 rounded-3xl shadow-lg shadow-green-700">
+                <div className="discription flex flex-col bg-skin-bg300 w-2/5 px-5 rounded-3xl shadow-lg shadow-green-700">
                     <div className="title font-bold font-sans text-lg my-3 text-left">{data.title}</div>
                     <div className="about font-sans mb-3 text-sm">{data.description}</div>
                     <div className="availability text-sm w-1/2 text-skin-text100 mt-16">Available</div>
