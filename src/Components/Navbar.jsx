@@ -35,11 +35,11 @@ export default function Navbar() {
                     <a className="w-52 absolute" href="/welcome">
                         <img className='hover:cursor-pointer' src="./img/Logo.svg" alt="Logo" />
                     </a>
-                    <div onClick={() => { settoggleMenu(prev => !prev) }} className="toggleMenu p-1 hover:cursor-pointer hover:scale-110 hover:shadow-md rounded-full right-[5%] absolute">
+                    <div onClick={() => { settoggleMenu(prev => !prev) }} className="toggleMenu p-1 hover:cursor-pointer hover:scale-110 hover:shadow-2xl shadow-green-700 text-skin-text200 border border-green-500 shadow-xl rounded-full right-[5%] absolute">
                         {!toggleMenu ? (<>Menu</>) : (<>UnMenu</>)}
                     </div>
                 </div>
-                <div className={`w-full py-24 z-0 h-full absolute bg-white flex flex-col items-center ${toggleMenu ? (`left-[0%]`) : (`left-[-100%]`)}  duration-200`}>
+                <div className={`w-full py-24 z-0 h-full absolute bg-skin-bg100 flex flex-col items-center ${toggleMenu ? (`left-[0%]`) : (`left-[-100%]`)}  duration-200`}>
                     {renderNavItem("Products", "/welcome")}
                     {renderNavItem("Projects", "/JournalAI")}
                     {renderNavItem("Knowledge base", "/resource")}

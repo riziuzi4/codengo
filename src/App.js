@@ -65,8 +65,8 @@ function App() {
               }
             </div>
           </div>
-          <div className="right hidden flex-col h-[calc(100vh-140px)] sticky top-28 mt-4 w-1/4 items-end px-16 min-w-8 md:flex">
-            <div className="navbar w-[25%] min-w-10 rounded-xl shadow-md  flex flex-col justify-evenly items-center flex-1">
+          <div className="right hidden flex-col h-[calc(100vh-140px)] sticky top-28 mt-4 w-1/4 items-end px-16 min-w-8 md:flex ">
+            <div className="navbar w-[25%] min-w-10 rounded-xl  flex flex-col justify-evenly items-center flex-1 shadow-lg shadow-green-700">
               <div className="option px-2">
                 <img src="./img/heart.svg" alt="" className="hover:scale-110 hover:cursor-pointer transition ease-in-out  duration-100" />
               </div>
@@ -85,6 +85,54 @@ function App() {
           </div>
         </div>
       </div>
+      <div className="footer h-[100vh] flex flex-col bg-skin-bg100 bg-[url(../public/imgHome/starsHome.svg)] mt-3">
+        <div className="row1 flex justify-center my-24">
+          <div className="message flex text-3xl font-sans font-bold text-skin-text100 mr-64">Learn with CodeNGO</div>
+          <button className="GetStarted w-64 my-1 p-2 text-sm font-bold font-sans text-skin-text100 bg-skin-primary300 rounded-xl">GET STARTED</button>
+        </div>
+        <div className="row2 flex justify-evenly">
+          <div className="col1 flex flex-col w-44">
+            <div className="title flex text-1xl text-skin-text100 font-sans font-bold my-3 ">About CodeNGO</div>
+            <a className="message hover:cursor-pointer hover:no-underline my-1 flex text-xs text-skin-text200 font-sans">Mission</a>
+            <a className="message hover:cursor-pointer hover:no-underline my-1 flex text-xs text-skin-text200 font-sans">Approach</a>
+            <a className="message hover:cursor-pointer hover:no-underline my-1 flex text-xs text-skin-text200 font-sans">Team</a>
+            <a className="message hover:cursor-pointer hover:no-underline my-1 flex text-xs text-skin-text200 font-sans">Brand Guidelines</a>
+            <a className="message hover:cursor-pointer hover:no-underline my-1 flex text-xs text-skin-text200 font-sans">Contact Us</a>
+          </div>
+          <div className="col2 flex flex-col w-44">
+            <div className="title flex text-1xl text-skin-text100 font-sans font-bold my-3">Educational Products</div>
+            <a className="message hover:cursor-pointer hover:no-underline my-1 flex text-xs text-skin-text200 font-sans">Coding Courses</a>
+            <a className="message hover:cursor-pointer hover:no-underline my-1 flex text-xs text-skin-text200 font-sans">Programming Workshops</a>
+            <a className="message hover:cursor-pointer hover:no-underline my-1 flex text-xs text-skin-text200 font-sans">Web Development Tools</a>
+            <a className="message hover:cursor-pointer hover:no-underline my-1 flex text-xs text-skin-text200 font-sans">Tech News</a>
+          </div>
+          <div className="col3 flex flex-col w-44">
+            <div className="title flex text-1xl text-skin-text100 font-sans font-bold my-3">Help and Support</div>
+            <a className="message hover:cursor-pointer hover:no-underline my-1 flex text-xs text-skin-text200 font-sans">FAQs</a>
+            <a className="message hover:cursor-pointer hover:no-underline my-1 flex text-xs text-skin-text200 font-sans">Status</a>
+            <a className="message hover:cursor-pointer hover:no-underline my-1 flex text-xs text-skin-text200 font-sans">Feedback</a>
+            <a className="message hover:cursor-pointer hover:no-underline my-1 flex text-xs text-skin-text200 font-sans">Contact Support</a>
+          </div>
+          <div className="col4 flex flex-col w-44">
+            <div className="row1 flex flex-col">
+              <div className="title flex text-1xl text-skin-text100 font-sans font-bold my-3">Privacy and Terms</div>
+              <a className="message hover:cursor-pointer hover:no-underline my-1 flex text-xs text-skin-text200 font-sans">Community Guidelines</a>
+              <a className="message hover:cursor-pointer hover:no-underline my-1 flex text-xs text-skin-text200 font-sans">Terms of Service</a>
+              <a className="message hover:cursor-pointer hover:no-underline my-1 flex text-xs text-skin-text200 font-sans">Privacy Policy</a>
+              <a className="message hover:cursor-pointer hover:no-underline my-1 flex text-xs text-skin-text200 font-sans">Do Not Sell My Personal Information</a>
+              <a className="message hover:cursor-pointer hover:no-underline my-1 flex text-xs text-skin-text200 font-sans">Contribution FAQs</a>
+              <a className="message hover:cursor-pointer hover:no-underline my-1 flex text-xs text-skin-text200 font-sans">Contact Us</a>
+            </div>
+            <div className="row2 flex flex-col">
+              <div className="title flex text-1xl text-skin-text100 font-sans font-bold my-3">Connect with Us</div>
+              <a className="message hover:cursor-pointer hover:no-underline my-1 flex text-xs text-skin-text200 font-sans">Instagram</a>
+              <a className="message hover:cursor-pointer hover:no-underline my-1 flex text-xs text-skin-text200 font-sans">Twitter</a>
+            </div>
+          </div>
+        </div>
+        <div className="copyrights mt-40 flex justify-center text-xs text-skin-text200 font-sans">Copyright © 2023-2024 CodeNGO</div>
+      </div>
+
     </>
 
   );
@@ -94,42 +142,3 @@ export default App;
 
 
 
-
-
-
-<div class="hs-dropdown relative inline-flex">
-  <button id="hs-dropdown-with-dividers" type="button" class="hs-dropdown-toggle py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
-    Actions
-    <svg class="hs-dropdown-open:rotate-180 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6" /></svg>
-  </button>
-
-  <div class="hs-dropdown-menu hidden transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 min-w-[15rem] bg-white shadow-md rounded-lg p-2 mt-2 divide-y divide-gray-200 dark:bg-gray-800 dark:border dark:border-gray-700 dark:divide-gray-700" aria-labelledby="hs-dropdown-with-dividers">
-    <div class="py-2 first:pt-0 last:pb-0">
-      <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700" href="https://www.genotek.global/products?category=Expansion%20Joint%20Covers">
-        Newsletter
-      </a>
-      <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700" href="https://www.genotek.global/products?category=Expansion%20Joint%20Covers">
-        Purchases
-      </a>
-      <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700" href="https://www.genotek.global/products?category=Expansion%20Joint%20Covers">
-        Downloads
-      </a>
-      <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700" href="https://www.genotek.global/products?category=Expansion%20Joint%20Covers">
-        Team Account
-      </a>
-    </div>
-    <div class="py-2 first:pt-0 last:pb-0">
-      <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700" href="https://www.genotek.global/products?category=Expansion%20Joint%20Covers">
-        Upgrade License
-      </a>
-    </div>
-    <div class="py-2 first:pt-0 last:pb-0">
-      <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700" href="https://www.genotek.global/products?category=Expansion%20Joint%20Covers">
-        Account Settings
-      </a>
-      <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700" href="https://www.genotek.global/products?category=Expansion%20Joint%20Covers">
-        Sign out
-      </a>
-    </div>
-  </div>
-</div>
