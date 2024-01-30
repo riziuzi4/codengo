@@ -33,7 +33,7 @@ export default function Navbar() {
             <div className="flex h-12 my-5">
                 <div className="header z-10 flex justify-center w-full items-center relative">
                     <a className="w-52 absolute" href="/welcome">
-                        <img className='hover:cursor-pointer' src="./img/Logo.svg" alt="Logo" />
+                        <img className='hover:cursor-pointer' src="./img/logo.svg" alt="Logo" />
                     </a>
                     <div onClick={() => { settoggleMenu(prev => !prev) }} className="toggleMenu p-1 hover:cursor-pointer hover:scale-110 hover:shadow-2xl shadow-green-700 text-skin-text200 border border-green-500 shadow-xl rounded-full right-[5%] absolute">
                         {!toggleMenu ? (<>Menu</>) : (<>UnMenu</>)}
